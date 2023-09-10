@@ -1,0 +1,10 @@
+html, body {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+    /* font-size: 62.5%; sets the base font-size(rem) to 10px so .1rem = 1px    */
+}
+
+body > * {
+    border: .05rem red solid;
+}
