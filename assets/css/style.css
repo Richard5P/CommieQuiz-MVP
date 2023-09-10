@@ -8,3 +8,10 @@ html, body {
 body > * {
     border: .05rem red solid;
 }
+
+.game-logo {
+    min-width: 1rem;
+    max-width: 3rem;
+    min-height: 1rem;
+    max-height: 3rem;
+}
