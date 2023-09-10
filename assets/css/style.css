@@ -1,0 +1,37 @@
+html, body {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+    /* font-size: 62.5%; sets the base font-size(rem) to 10px so .1rem = 1px    */
+}
+
+body  * {
+    border: .05rem red solid;
+}
+
+.game-logo {
+    min-width: .5em;
+    max-width: 5vw;
+    min-height: .5rem;
+    max-height: 5vw;
+}
+
+.navbar{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    /* align-items:end;
+    justify-content: space-evenly; */
+}
+
+.nav-links li{
+    list-style-type: none;  
+    margin: .5rem;
+}
