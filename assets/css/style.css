@@ -1,3 +1,9 @@
+ 
+/* CSS Variable */
+:root {
+    --commie-red:#cb1d1d;
+}
+
 html, body {
     margin: 0; 
     padding: 0;
@@ -5,10 +11,13 @@ html, body {
     /* font-size: 62.5%; sets the base font-size(rem) to 10px so .1rem = 1px    */
 }
 
+/* housekeeping - set default attributes */
 body  * {
-    border: .05rem red solid;
+ /*   border: .05rem red solid;  for debuggin  */
 }
 
+
+/*  Navbar  */
 .game-logo {
     min-width: .5em;
     max-width: 5vw;
@@ -46,4 +55,35 @@ body  * {
 .game-control-difficulty{
     display: flex;
     flex-direction: column;
+}
+
+.game-control-difficulty-buttons input{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.game-control-difficulty-bars{
+    display:flex;
+    align-items: flex-end;    
+}
+
+.difficulty-bar{
+    background-color: var(--commie-red);
+    width: 13px;
+/*    margin: 0px 3px 0px 5px; */
+}
+
+.bar-small{
+    height: 4px;
+    margin: 0px 8px 0px 4px;
+}
+
+.bar-medium{
+    height: 8px;
+    margin: 0px 4px 0px 4px;
+}
+
+.bar-tall{
+    height: 12px;
+    margin: 0px 2px 0px 8px;
 }
