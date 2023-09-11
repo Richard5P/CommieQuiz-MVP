@@ -35,3 +35,15 @@ body  * {
     list-style-type: none;  
     margin: .5rem;
 }
+
+/* game controls */
+.game-control-container{
+    display:flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.game-control-difficulty{
+    display: flex;
+    flex-direction: column;
+}

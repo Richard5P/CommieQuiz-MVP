@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Commie Quiz</title>
 </head>
+
 <body>
     <!-- nav header-->
-    <nav class="navbar"> <!--navbar container-->
-        <div class="logo"> <!--game header logo-->
+    <nav class="navbar">
+        <!--navbar container-->
+        <div class="logo">
+            <!--game header logo-->
             <a href="./index.html">
-                <img src="/assets/media/images/communist_logo.png" alt="Red star with hammer and sickle" class="game-logo">
+                <img src="/assets/media/images/communist_logo.png" alt="Red star with hammer and sickle"
+                    class="game-logo">
             </a>
-        </div> <!--/game header logo-->
-        <div class="nav-links">  <!--nav links container-->
+        </div>
+        <!--/game header logo-->
+        <div class="nav-links">
+            <!--nav links container-->
             <ul>
                 <li><a href="./index.html">Game</a></li>
                 <li><a href="#">Rules</a></li>
                 <li><a href="#">About</a></li>
             </ul>
-        </div> <!--/nav links container-->
-    </nav> <!--/navbar container-->
+        </div>
+        <!--/nav links container-->
+    </nav>
+    <!--/navbar container-->
 
     <!-- game body-->
     <main>
-    
+        <div class="game-control-container">
+            <!--difficulty, start game, sound toggle-->
+            <div class="game-control-difficulty"> <!--flex container-->
+                <div class="game-control-difficulty-title">
+                    Level
+                </div>
+                <div class="game-control-difficulty-buttons">
+                    <input type="radio" id="comrade" name="difficulty" value="easy">
+                    <input type="radio" id="vanguard" name="difficulty" value="med">
+                    <input type="radio" id="intellegencia" name="difficulty" value="hard">
+                </div>
+                <div class="game-control-difficulty-bars">
+                    <div class="difficulty-bar bar-small"></div>
+                    <div class="difficulty-bar bar-medium"></div>
+                    <div class="difficulty-bar bar-tall"></div>
+                </div>
+            </div>
+            <div class="game-control-start">
+
+            </div>
+            <div class="game-control-sound">
+
+            </div>
+        </div>
+
     </main>
 
 
@@ -34,7 +67,8 @@
 
     </footer>
 
-<!-- JavaScript References-->
+    <!-- JavaScript References-->
     <script src="/assets/js/script.js"></script>
 </body>
+
 </html>
