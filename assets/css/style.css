@@ -48,11 +48,14 @@ body  * {
 /* game controls */
 .game-control-container{
     display:flex;
-    justify-content: flex-start;
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center;
     text-align: center;
 }
 
 .game-control-difficulty{
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
 }
@@ -87,3 +90,7 @@ body  * {
     height: 12px;
     margin: 0px 2px 0px 8px;
 }
+
+.game-control-start{}
+
+.game-control-sound{}
