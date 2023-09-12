@@ -34,7 +34,7 @@
 
     <!-- game body-->
     <main>
-        <div class="game-control-container">
+        <section class="game-control-container">
             <!--difficulty, start game, sound toggle-->
             <div class="game-control-difficulty">
                 <!--flex container-->
@@ -65,7 +65,22 @@
                     <!-- <i class="fa-solid fa-volume-high"></i> -->
                 </div>
             </div>
-        </div>
+        </section>
+        <!--/game-control-container-->
+        <section class="game-container">
+            <div class="game-status-bar">
+                <div class="game-status-bar-time">
+                    Time Left:<span id="game-time"></span>
+                </div>
+                <div class="game-status-bar-score">Score: <i class="fa-solid fa-check"></i>
+                    <span id="score-correct"></span>
+                    <span> </span><i class="fa-solid fa-xmark"></i>
+                    <span id="score-incorrect"></span>
+                </div>
+            </div>
+            <!--/game-status-bar-->
+        </section>
+        <!--/game-container-->
 
     </main>
 

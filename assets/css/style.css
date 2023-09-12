@@ -13,9 +13,8 @@ html, body {
 
 /* housekeeping - set default attributes */
 body  * {
- /*   border: .05rem red solid;  for debuggin  */
+ /*   border: .05rem red solid;  for debugging */
 }
-
 
 /*  Navbar  */
 .game-logo {
@@ -36,8 +35,6 @@ body  * {
     margin: 0;
     padding: 0;
     display:flex;
-    /* align-items:end;
-    justify-content: space-evenly; */
 }
 
 .nav-links li{
@@ -58,7 +55,6 @@ body  * {
     align-self: flex-start;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
 }
 
 .game-control-difficulty-buttons input{
@@ -97,12 +93,17 @@ body  * {
     width: 50px;
     border-radius: 50%;
     border: 5px solid var(--commie-red);
-    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.game-control-start{}
+.game-container{
+    display: flex;
+}
 
-.game-control-sound{}
+.game-status-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
