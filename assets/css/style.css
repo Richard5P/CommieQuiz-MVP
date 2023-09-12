@@ -58,6 +58,7 @@ body  * {
     align-self: flex-start;
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 }
 
 .game-control-difficulty-buttons input{
@@ -89,6 +90,17 @@ body  * {
 .bar-tall{
     height: 12px;
     margin: 0px 2px 0px 8px;
+}
+
+.volume-control {
+    height: 50px;    
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid var(--commie-red);
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-control-start{}
