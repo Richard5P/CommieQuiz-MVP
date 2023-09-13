@@ -11,10 +11,21 @@ html, body {
     /* font-size: 62.5%; sets the base font-size(rem) to 10px so .1rem = 1px    */
 }
 
+
 /* housekeeping - set default attributes */
 body  * {
  /*   border: .05rem red solid;  for debugging */
 }
+
+/* body grid - alternative to styling body directly */
+.body-layout {
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    display: grid; 
+    grid-template-rows: auto 1fr auto;   
+}
+
 
 /*  Navbar  */
 .game-logo {
@@ -89,8 +100,8 @@ body  * {
 }
 
 .volume-control {
-    height: 50px;    
-    width: 50px;
+    height: 40px;    
+    width: 40px;
     border-radius: 50%;
     border: 5px solid var(--commie-red);
     display: flex;
@@ -100,6 +111,7 @@ body  * {
 
 .game-container{
     display: flex;
+    
 }
 
 .game-status-bar{
@@ -107,3 +119,18 @@ body  * {
     width: 100%;
     justify-content: space-between;
 }
+
+/* footer */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMediaIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+}
+

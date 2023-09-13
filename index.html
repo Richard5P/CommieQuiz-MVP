@@ -9,87 +9,98 @@
 </head>
 
 <body>
-    <!-- nav header-->
-    <nav class="navbar">
-        <!--navbar container-->
-        <div class="logo">
-            <!--game header logo-->
-            <a href="./index.html">
-                <img src="./assets/media/images/communist_logo.png" alt="Red star with hammer and sickle"
-                    class="game-logo">
-            </a>
-        </div>
-        <!--/game header logo-->
-        <div class="nav-links">
-            <!--nav links container-->
-            <ul>
-                <li><a href="./index.html">Game</a></li>
-                <li><a href="#">Rules</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>
-        <!--/nav links container-->
-    </nav>
-    <!--/navbar container-->
+    <div class="body-layout">
+        <div class="body-layout-header">
+            <!-- nav header-->
+            <nav class="navbar">
+                <!--navbar container-->
+                <div class="logo">
+                    <!--game header logo-->
+                    <a href="./index.html">
+                        <img src="./assets/media/images/communist_logo.png" alt="Red star with hammer and sickle"
+                            class="game-logo">
+                    </a>
+                </div>
+                <!--/game header logo-->
+                <div class="nav-links">
+                    <!--nav links container-->
+                    <ul>
+                        <li><a href="./index.html">Game</a></li>
+                        <li><a href="#">Rules</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <!--/nav links container-->
+            </nav>
+            <!--/navbar container-->
+        </div> <!-- /body-layout-header -->
 
-    <!-- game body-->
-    <main>
-        <section class="game-control-container">
-            <!--difficulty, start game, sound toggle-->
-            <div class="game-control-difficulty">
-                <!--flex container-->
-                <div class="game-control-difficulty-title">
-                    Level
-                </div>
-                <div class="game-control-difficulty-buttons">
-                    <input type="radio" id="comrade" name="difficulty" value="easy">
-                    <input type="radio" id="vanguard" name="difficulty" value="med">
-                    <input type="radio" id="intellegencia" name="difficulty" value="hard">
-                </div>
-                <div class="game-control-difficulty-bars">
-                    <div class="difficulty-bar bar-small"></div>
-                    <div class="difficulty-bar bar-medium"></div>
-                    <div class="difficulty-bar bar-tall"></div>
-                </div>
-            </div>
-            <div class="game-control-start">
-                <div class="game-control-start-button">
-                    <button>
-                        Start Game
-                    </button>
-                </div>
-            </div>
-            <div class="game-control-sound">
-                <div class="volume-control">
-                    <i class="fa-solid fa-volume-off"></i>
-                    <!-- <i class="fa-solid fa-volume-high"></i> -->
-                </div>
-            </div>
-        </section>
-        <!--/game-control-container-->
-        <section class="game-container">
-            <div class="game-status-bar">
-                <div class="game-status-bar-time">
-                    Time Left:<span id="game-time"></span>
-                </div>
-                <div class="game-status-bar-score">Score: <i class="fa-solid fa-check"></i>
-                    <span id="score-correct"></span>
-                    <span> </span><i class="fa-solid fa-xmark"></i>
-                    <span id="score-incorrect"></span>
-                </div>
-            </div>
-            <!--/game-status-bar-->
-        </section>
-        <!--/game-container-->
+        <!-- game body-->
+        <div class="body-layout-main">
+            <main>
+                <section class="game-control-container">
+                    <!--difficulty, start game, sound toggle-->
+                    <div class="game-control-difficulty">
+                        <!--flex container-->
+                        <div class="game-control-difficulty-title">
+                            Level
+                        </div>
+                        <div class="game-control-difficulty-buttons">
+                            <input type="radio" id="comrade" name="difficulty" value="easy">
+                            <input type="radio" id="vanguard" name="difficulty" value="med">
+                            <input type="radio" id="intellegencia" name="difficulty" value="hard">
+                        </div>
+                        <div class="game-control-difficulty-bars">
+                            <div class="difficulty-bar bar-small"></div>
+                            <div class="difficulty-bar bar-medium"></div>
+                            <div class="difficulty-bar bar-tall"></div>
+                        </div>
+                    </div>
+                    <div class="game-control-start">
+                        <div class="game-control-start-button">
+                            <button>
+                                Start Game
+                            </button>
+                        </div>
+                    </div>
+                    <div class="game-control-sound">
+                        <div class="volume-control">
+                            <i class="fa-solid fa-volume-off"></i>
+                            <!-- <i class="fa-solid fa-volume-high"></i> -->
+                        </div>
+                    </div>
+                </section>
+                <!--/game-control-container-->
+                <section class="game-container">
+                    <div class="game-status-bar">
+                        <div class="game-status-bar-time">
+                            Time Left:<span id="game-time"></span>
+                        </div>
+                        <div class="game-status-bar-score">Score: <i class="fa-solid fa-check"></i>
+                            <span id="score-correct"></span>
+                            <span> </span><i class="fa-solid fa-xmark"></i>
+                            <span id="score-incorrect"></span>
+                        </div>
+                    </div>
+                    <!--/game-status-bar-->
+                </section>
+                <!--/game-container-->
 
-    </main>
+            </main>
+        </div> <!--   /body-layout-main -->
 
+        <!-- social media footer-->
+        <div class="body-layout-footer">
+            <footer>
+                <div class="socialMediaIcons">
+                    <i class="fa-brands fa-telegram"></i>  
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </footer>
+        </div> <!-- /body-layout-footer -->
 
-    <!-- social media footer-->
-    <footer>
-
-    </footer>
-
+    </div> <!-- body-layout  -->
     <!-- Font Awesome References -->
     <script src="https://kit.fontawesome.com/b471b308cb.js" crossorigin="anonymous"></script>
 
