@@ -14,25 +14,28 @@ html, body {
 
 /* housekeeping - set default attributes */
 body  * {
- /*   border: .05rem red solid;  for debugging */
+    /* border: .05rem red solid; for debugging */
 }
 
 /* body grid - alternative to styling body directly */
 .body-layout {
     min-height: 100vh;
     min-height: 100dvh;
+    max-height: 100vh;
+    max-height: 100dvh;
 
     display: grid; 
-    grid-template-rows: auto 1fr auto;   
-}
+    grid-template-rows: auto 1fr auto;
+    padding: 0 2vw;
+    padding: 0 2dvw;
+    row-gap: .5rem;
+    }
 
 
 /*  Navbar  */
 .game-logo {
-    min-width: .5em;
-    max-width: 5vw;
-    min-height: .5rem;
-    max-height: 5vw;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .navbar{
@@ -60,12 +63,15 @@ body  * {
     justify-content: space-between; 
     align-items: center;
     text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 .game-control-difficulty{
     align-self: flex-start;
     display: flex;
     flex-direction: column;
+    margin-left: .5rem;
 }
 
 .game-control-difficulty-buttons input{
@@ -107,17 +113,44 @@ body  * {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right:.5rem;
+}
+
+.body-layout-main{
+    border: 5px solid var(--commie-red);
+    display:flex;
+    flex-direction: column;
 }
 
 .game-container{
     display: flex;
-    
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid var(--commie-red);
+    margin: .25rem .5rem;
 }
 
 .game-status-bar{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.game{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    row-gap: .5rem;
+}
+
+.game-button{
+    display: flex;
+}
+
+.btn-next{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
 }
 
 /* footer */
@@ -131,6 +164,10 @@ body  * {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 2rem;
+    /* column-gap: 2rem; */
+}
+
+.socialMediaIcons > i{
+    margin: 1rem;
 }
 
