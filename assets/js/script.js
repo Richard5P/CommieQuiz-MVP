@@ -48,16 +48,18 @@ const checkAnswer = el => {
     if (answerClicked == false){
       answerClicked = true;
       removeAnswerListeners();
+      console.log("correct answer: " + CorrectAnswerText);
+      console.log("el.innerText: " + el.innerText);
       if (CorrectAnswerText === el.innerText) {
         el.style.backgroundColor = "green";  
         ++correctAnswerScore; 
-        correctCount.style.color = "green";
-        correctCount.innerText = correctAnswerScore;
+        correctScore.style.color = "green";
+        correctScore.innerText = correctAnswerScore;
       } else {
         el.style.backgroundColor = "red";
         ++incorrectAnswerScore;
-        incorrectCount.style.color = "red";
-        incorrectCount.innerText = incorrectAnswerScore;
+        incorrectScore.style.color = "red";
+        incorrectScore.innerText = incorrectAnswerScore;
       }
     }
     // Need exit criteria here - time or key
@@ -97,7 +99,6 @@ const getUniqueRandomInt = (min, max) => {
       quizAnswer2.addEventListener("click", function () {checkAnswer(this)});
       quizAnswer3.addEventListener("click", function () {checkAnswer(this)});
       quizAnswer4.addEventListener("click", function () {checkAnswer(this)});
-    console.log("Added Answer Listeners");
   }
   
   const removeAnswerListeners = () => {
@@ -106,7 +107,6 @@ const getUniqueRandomInt = (min, max) => {
       quizAnswer2.removeEventListener("click", function ()     {checkAnswer(this)});
       quizAnswer3.removeEventListener("click", function () {checkAnswer(this)});
       quizAnswer4.removeEventListener("click", function () {checkAnswer(this)});
-    console.log("Removed Answer Listeners");
   }
   
   // Add event listeners
@@ -137,7 +137,6 @@ const getUniqueRandomInt = (min, max) => {
   function nextQuestion() {
     answerClicked = false;
     if (qIndex < quizQuestions.length) {
-      console.log ('qIndex ' + qIndex);
       let iQu = getUniqueRandomInt(0, quizQuestions.length - 1);
       displayQandA(iQu);
       qIndex += 1;
