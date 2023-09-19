@@ -13,9 +13,9 @@ html, body {
 
 
 /* housekeeping - set default attributes */
-/*body  * {
-     border: .05rem red solid; for debugging 
-}  */
+body  * {
+    /* border: .05rem red solid; for debugging */
+}
 
 /* body grid - alternative to styling body directly */
 .body-layout {
@@ -144,27 +144,8 @@ html, body {
     row-gap: .5rem;
 }
 
-.game-question {
-    width:70%;
-    margin: 1rem auto;
-}
-
-.game-answers {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.game-answer {
-    width: 15rem;
-    height: 5rem;
-}
-
 .game-button{
     display: flex;
-    justify-items: center;
-    justify-content: center;
 }
 
 .btn-next{
