@@ -1,6 +1,5 @@
 //Variables - initialise targeted elements
 const btnStart = document.getElementById("btn-start");
-console.log(btnStart);
 const quizQuestion = document.getElementById("question");
 const quizAnswer1 = document.getElementById("btn-answer1");
 const quizAnswer2 = document.getElementById("btn-answer2");
@@ -111,9 +110,10 @@ const getUniqueRandomInt = (min, max) => {
   }
   
   // Add event listeners
-  console.log("trying to add listener to  " + btnStart);
   btnStart.addEventListener("click", function () {
       startQuiz()});
+  btnNext.addEventListener ("click", function () {
+  nextQuestion()});
   
 
 //   btnGameExit.addEventListener ("click", function() {
