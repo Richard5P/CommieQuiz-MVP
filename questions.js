@@ -6,7 +6,7 @@ const quizQuestions = [{
         b: "Leon Trosky",
         c: "Rosa Luxemburg",
         d: "Vladimir Lenin",
-        answer: "D",
+        answer: "d",
         linkto: {
             docName: "War and Revolution",
             url: "https://www.marxists.org/archive/lenin/works/1917/may/14.htm",
