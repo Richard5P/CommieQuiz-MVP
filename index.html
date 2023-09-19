@@ -8,125 +8,112 @@
     <title>Commie Quiz</title>
 </head>
 
-<body>
-    <div class="body-layout">
-        <div class="body-layout-header">
-            <!-- nav header-->
-            <nav class="navbar">
-                <!--navbar container-->
-                <div class="logo">
-                    <!--game header logo-->
-                    <a href="./index.html">
-                        <img src="./assets/media/images/communist_logo.png" alt="Red star with hammer and sickle"
-                            class="game-logo">
-                    </a>
+<body class="body-layout">
+    <!-- nav header-->
+    <nav class="navbar body-layout-header">
+        <!--navbar container-->
+        <div class="logo">
+            <!--game header logo-->
+            <a href="./index.html">
+                <img src="./assets/media/images/communist_logo.png" alt="Red star with hammer and sickle"
+                    class="game-logo">
+            </a>
+        </div>
+        <!--/game header logo-->
+        <div class="nav-links">
+            <!--nav links container-->
+            <ul>
+                <li><a href="./index.html">Game</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <!--/nav links container-->
+    </nav>
+
+    <!-- game body main-->
+    <main class="body-layout-main">
+        <section class="game-control-container">
+            <!--difficulty, start game, sound toggle-->
+            <div class="game-control-difficulty">
+                <!--flex container-->
+                <div class="game-control-difficulty-title">
+                    Level
                 </div>
-                <!--/game header logo-->
-                <div class="nav-links">
-                    <!--nav links container-->
-                    <ul>
-                        <li><a href="./index.html">Game</a></li>
-                        <li><a href="#">Rules</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
+                <div class="game-control-difficulty-buttons">
+                    <input type="radio" id="comrade" name="difficulty" value="easy">
+                    <input type="radio" id="vanguard" name="difficulty" value="med">
+                    <input type="radio" id="intellegencia" name="difficulty" value="hard">
                 </div>
-                <!--/nav links container-->
-            </nav>
-            <!--/navbar container-->
-        </div> <!-- /body-layout-header -->
-
-        <!-- game body-->
-        <div class="body-layout-main">
-            <main>
-                <section class="game-control-container">
-                    <!--difficulty, start game, sound toggle-->
-                    <div class="game-control-difficulty">
-                        <!--flex container-->
-                        <div class="game-control-difficulty-title">
-                            Level
-                        </div>
-                        <div class="game-control-difficulty-buttons">
-                            <input type="radio" id="comrade" name="difficulty" value="easy">
-                            <input type="radio" id="vanguard" name="difficulty" value="med">
-                            <input type="radio" id="intellegencia" name="difficulty" value="hard">
-                        </div>
-                        <div class="game-control-difficulty-bars">
-                            <div class="difficulty-bar bar-small"></div>
-                            <div class="difficulty-bar bar-medium"></div>
-                            <div class="difficulty-bar bar-tall"></div>
-                        </div>
-                    </div>
-                    <div class="game-control-start">
-                        <div class="game-control-start-button">
-                            <button id="btn-start">
-                                Start Game
-                            </button>
-                        </div>
-                    </div>
-                    <div class="game-control-sound">
-                        <div class="volume-control">
-                            <i class="fa-solid fa-volume-off"></i>
-                            <!-- <i class="fa-solid fa-volume-high"></i> -->
-                        </div>
-                    </div>
-                </section>
-                <!--/game-control-container-->
-                <section class="game-container">
-                    <div class="game-status-bar">
-                        <div class="game-status-bar-time">
-                            Time Left:<span id="game-time"></span>
-                        </div>
-                        <div class="game-status-bar-score">Score: <i class="fa-solid fa-check"></i>
-                            <span id="score-correct"></span>
-                            <span> </span><i class="fa-solid fa-xmark"></i>
-                            <span id="score-incorrect"></span>
-                        </div>
-                    </div>
-                    <!--/game-status-bar-->
-
-                    <div class="game">
-                        <div id="question" class="game-question"></div>
-                        <div>
-                            <button id="btn-answer1" class="game-answer"></button>
-                        </div>
-                        <div>
-                            <button id="btn-answer2" class="game-answer"></button>
-                        </div>
-                        <div>
-                            <button id="btn-answer3" class="game-answer"></button>
-                        </div>
-                        <div>
-                            <button id="btn-answer4" class="game-answer"></button>
-                        </div>
-                    </div>
-
-                    <div class="game-button">
-                        <button id="btn-next" class="btn-next">Next Question</button>
-                    </div>
-
-                </section>
-                <!--/game-container-->
-            </main>
-        </div> <!--   /body-layout-main -->
-
-        <!-- social media footer-->
-        <div class="body-layout-footer">
-            <footer>
-                <div class="socialMediaIcons">
-                    <i class="fa-brands fa-telegram"></i>  
-                    <i class="fa-brands fa-square-x-twitter"></i>
-                    <i class="fa-brands fa-tiktok"></i>
+                <div class="game-control-difficulty-bars">
+                    <div class="difficulty-bar bar-small"></div>
+                    <div class="difficulty-bar bar-medium"></div>
+                    <div class="difficulty-bar bar-tall"></div>
                 </div>
-            </footer>
-        </div> <!-- /body-layout-footer -->
+            </div>
+            <div class="game-control-start">
+                <div class="game-control-start-button">
+                    <button id="btn-start">
+                        Start Game
+                    </button>
+                </div>
+            </div>
+            <div class="game-control-sound">
+                <div class="volume-control">
+                    <i class="fa-solid fa-volume-off"></i>
+                    <!-- <i class="fa-solid fa-volume-high"></i> -->
+                </div>
+            </div>
+        </section>
 
-    </div> <!-- body-layout  -->
+        <!--/game-control-container-->
+        <section class="game-container">
+            <div class="game-status-bar">
+                <div class="game-status-bar-time">
+                    Time Left:<span id="game-time"></span>
+                </div>
+                <div class="game-status-bar-score">Score: <i class="fa-solid fa-check"></i>
+                    <span id="score-correct"></span>
+                    <span> </span><i class="fa-solid fa-xmark"></i>
+                    <span id="score-incorrect"></span>
+                </div>
+            </div>
+            <!--/game-status-bar-->
+
+            <div class="game">
+                <div id="question" class="game-question"></div>
+                <div class="game-answers">
+                    <button id="game-answer btn-answer1"></button>
+                    <button id="game-answer btn-answer2"></button>
+                    <button id="game-answer btn-answer3"></button>
+                    <button id="game-answer btn-answer4"></button>
+                </div>
+            </div>
+
+            <div class="game-button">
+                <button id="btn-next" class="btn-next">Next Question</button>
+            </div>
+        </section>
+        <!--/game-container-->
+    </main> <!-- /body-layout-main -->
+
+    <!-- social media footer-->
+    <footer class="body-layout-footer">
+        <div class="socialMediaIcons">
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+    </footer> <!-- /body-layout-footer -->
+
+    
     <!-- Font Awesome References -->
     <script src="https://kit.fontawesome.com/b471b308cb.js" crossorigin="anonymous"></script>
 
     <!-- JavaScript References-->
     <script src="/questions.js"></script>
     <script src="/assets/js/script.js"></script>
-</body>
+
+</body>  <!-- body-layout  -->
 
 </html>
