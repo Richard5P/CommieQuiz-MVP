@@ -48,8 +48,6 @@ const checkAnswer = el => {
     if (answerClicked == false){
       answerClicked = true;
       removeAnswerListeners();
-      console.log("correct answer: " + CorrectAnswerText);
-      console.log("el.innerText: " + el.innerText);
       if (CorrectAnswerText === el.innerText) {
         el.style.backgroundColor = "green";  
         ++correctAnswerScore; 
@@ -171,6 +169,5 @@ const getUniqueRandomInt = (min, max) => {
   
     quizCorrectAnswer = quizQuestions[iQd].answer;
     CorrectAnswerText = quizQuestions[iQd][quizCorrectAnswer];
-    console.log('Correct # ' + quizCorrectAnswer +'    '+ CorrectAnswerText);
   }
   
