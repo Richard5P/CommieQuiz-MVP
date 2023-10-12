@@ -10,9 +10,13 @@ const quizAnswers = document.getElementsByClassName("game-answer");
 const gameTime = document.getElementById("game-time");
 const correctScore = document.getElementById("score-correct");
 const incorrectScore = document.getElementById("score-incorrect");
+const aGameRules = document.getElementById("game-rules-anchor");
+const aGameAbout = document.getElementById("game-about-anchor");
 
 // Add modals here
 // const modalGameEnd = document.getElementById("game-end");
+const modalGameRules = document.getElementById("game-rules");
+const modalGameAbout = document.getElementById("game-about");
 
 //Global Variables
 let qIndex; // Question index
